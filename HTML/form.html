@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree Survey</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="formcontainer">
+      <div class="smalltree">
+        <img src="../smalltree.png" alt="smalltree" />
+      </div>
+      <h1 class="text">Tree Survey Form</h1>
+      <p class="text">A survey form on the health of the environment</p>
+      <br />
+      <h1 class="text2">Name:</h1>
+      <input
+        type="text"
+        placeholder="Enter your name e.g John Doe"
+        name="name"
+        class="textinput"
+        required
+      />
+      <br />
+      <h1 class="text2">Email:</h1>
+      <h1 class="text"></h1>
+      <input
+        type="email"
+        placeholder="Email"
+        name="email"
+        class="textinput"
+        required
+      />
+      <br />
+      <h1 class="text2">Age(Optional):</h1>
+      <input
+        type="text"
+        placeholder="Enter your age"
+        name="name"
+        class="textinput"
+      />
+      <br />
+      <h1 class="text">Select continent of residence</h1>
+      <select id="continent">
+        <option value="Africa">Africa</option>
+        <option value="NA">North America</option>
+        <option value="SA">South America</option>
+        <option value="europe">Europe</option>
+      </select>
+      <label class="select">Select Gender</label>
+      <div>
+        <div class="gender">
+          <input type="radio" name="gender" id="male" />
+          <label class="text2" for="male">Male</label>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender" id="female" />
+          <label class="text2" for="female">Female</label>
+        </div>
+        <div class="gender">
+          <input type="radio" name="gender" id="other" />
+          <label class="text2" for="other">Other</label>
+        </div>
+      </div>
+      <div>
+        <label class="select"
+        >Please select at least one of the options below:</label
+      >
+        <div class="gender">
+          <input type="checkbox" id="planted" />
+          <label class="text2" for="planted"
+            >I have planted a tree or any other plant</label
+          >
+        </div>
+        <div class="gender">
+          <input type="checkbox" id="community" />
+          <label class="text2" for="community"
+            >I take part in community service for the environment</label
+          >
+        </div>
+        <div class="gender">
+          <input type="checkbox" id="promise" />
+          <label class="text2" for="promise"
+            >I promise to plant more from now on</label
+          >
+        </div>
+      </div>
+      <div id="box">
+        <label class="select" for="suggestion"
+          >Any comments or suggestions</label
+        >
+        <textarea
+          name="review"
+          id="review"
+          placeholder="Comments/Suggestions"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>
